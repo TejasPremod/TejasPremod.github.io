@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerala Districts Dropdown</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .dropdown {
+            position: relative;
+            width: 250px;
+        }
+        .dropdown input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            border: 1px solid #ccc;
+            width: 100%;
+            max-height: 200px;
+            overflow-y: auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        .dropdown-content div {
+            padding: 10px;
+            cursor: pointer;
+        }
+        .dropdown-content div:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <input type="text" id="searchBox" placeholder="Search District..." onkeyup="filterFunction()">
+        <div class="dropdown-content" id="dropdownList">
+            <!-- Districts will be populated here -->
+        </div>
+    </div>
+
+    <script>
+        const districts = [
+            "Thiruvananthapuram", "Kollam", "Pathanamthitta", "Alappuzha", "Kottayam", "Idukki", 
+            "Ernakulam", "Thrissur", "Palakkad", "Malappuram", "Kozhikode", "Wayanad", "Kannur", "Kasaragod"
+        ];
+        
+        const dropdownList = document.getElementById("dropdownList");
+        const searchBox = document.getElementById("searchBox");
+
+        function populateDropdown() {
+            dropdownList.innerHTML = "";
+            districts.forEach(district => {
+                let item = document.createElement("div");
+                item.textContent = district;
+                item.onclick = function() {
+                    searchBox.value = district;
+                    dropdownList.style.display = "none";
+                };
+                dropdownList.appendChild(item);
+            });
+        }
+
+        function filterFunction() {
+            const filter = searchBox.value.toLowerCase();
+            const items = dropdownList.getElementsByTagName("div");
+            for (let i = 0; i < items.length; i++) {
+                let txtValue = items[i].textContent || items[i].innerText;
+                items[i].style.display = txtValue.toLowerCase().includes(filter) ? "block" : "none";
+            }
+            dropdownList.style.display = "block";
+        }
+
+        searchBox.onclick = function() {
+            populateDropdown();
+            dropdownList.style.display = "block";
+        };
+
+        document.addEventListener("click", function(event) {
+            if (!document.querySelector(".dropdown").contains(event.target)) {
+                dropdownList.style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>
