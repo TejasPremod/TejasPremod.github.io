@@ -219,6 +219,18 @@ form .btn2{
     cursor: pointer;
 }
 
+form .btn2{
+    padding: 20px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background 0.5s;
+    background: #ff004f;
+
+}
+form .btn2:hover{
+    background: #000000;
+
 #msg{
     color: #61b752;
     margin-top: -40px;
@@ -253,4 +265,19 @@ form .btn2{
 }
 .dropdown-content div:hover {
     background-color: #000000;
+}
+.send-mail-btn.btn3{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #ffffff;
+    background: #ff004f;
+    transition: background 0.5s;
+}
+.btn3:hover{
+    background: #000000;
 }
