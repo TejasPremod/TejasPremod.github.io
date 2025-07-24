@@ -285,7 +285,7 @@ form .btn2:hover{
 /*------------for small---------*/  
 @media only screen and (max-width:600px){
     #header{
-        background-image: ;url
+        background-image: url(Web_Photo_Editor.png);
     }
 
 }
