@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"content="IE=edge">
+    <meta name="viewport"content="width=device-width,initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2c90aca714.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+</style>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image.png" class="logo" >
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark " onclick="closemenu()"></i>
+                </ul>
+
+                <i class="fa-solid fa-bars" onclick="openmenu()" ></i>
+            </nav>
+            <div class="header-text">
+
+                <p>Aspiring developer</p>
+                <h1> Hi, I'm <span>Tejas</span> Premod<br>from India!</h1>
+            </div>
+
+        </div>
+    </div>
+<br>
+<br>
+<div class="scroll">
+    <marquee behavior="scroll" direction="RIGHT" scrollamount="20">
+        <img src="dont.jpg" width="300" height="200" alt="Image 1">
+        <img src="leave.png" magwidth="300" height="200" alt="Image 2">
+        <img src="yet.png" width="300" height="200" alt="Image 3">
+            
+    </marquee>
+</div>
+
+<!--------------ABOUT----------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> Hello there! My name is Tejas Premod and I am currently a first year
+                    at the college of engineering trivandrum pursuring my B Tech degree in electrical.
+                    I have a deep passion for coding, development, and animation. As an aspiring developer
+                     and animator, I love exploring new technologies and bringing ideas to life through 
+                     both programming and creative design. Whether it's building applications or crafting 
+                     animations, I enjoy solving problems and pushing my skills further. My goal is to make 
+                     an impact in both the tech and animation industries, combining logic and creativity 
+                     to create something amazing.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                    <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
+
+                </div>
+                <div class="tab-contents active-tab" id = "skills">
+                    <ul>
+                        <li><span>Soft Skills</span><br>
+                            ✔ Communication Skills<br> 
+                            ✔ Problem-Solving & Analytical Thinking<br> 
+                            ✔ Teamwork & Collaboration<br>
+                            ✔ Adaptability & Learning Attitude<br>
+                            ✔ Time Management<br>
+                            ✔ Presentation & Public Speaking<br>
+                            ✔ Leadership & Initiative</li>
+                        <li><span> Hard skills</span><br></li>
+                        ✔ Programming Languages – C,Python<br>
+                        ✔ Database Management – SQL<br>
+                        ✔ Web Development – HTML, CSS, JavaScript<br>
+                        ✔ Cloud Computing –Azure<br>
+                        ✔ Software Development & Version Control GitHub<br>
+                        ✔ Operating Systems & Networking – Linux, Computer Networks<br>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Python</span><br>2 years</li>
+                        <li><span>C</span><br>+ 1 year</li>
+                        <li><span>MySql</span><br>+2 years</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>SCHOOLING</span><br>
+                            2020-2021:SSLC full A+<br>
+                            2021-2022:HSC full A+ <br>
+                            2022-2023: HSC full A+<br></li>
+
+                        <li><span>COLLEGE</span><br>
+                            1st year: Electrical and Computer<br></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="projects">
+                    <ul>
+                        <li><span>Working on projects</span><br>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="achievements">
+                    <ul>
+                        <li><span>Toastmasters/Science/
+                            Maths/Academic/Enterprenurship
+                            Clubs</span><br>
+                            ✔ ACER International Benchmark Test<br>
+                            ✔ Distinction<br>
+                            <span>Multiple Medals </span><br>
+                            ✔ All Rounder Drawing / Elocution /
+                            Painting / Pottery / Academic
+                            Excellence <br>
+                            <span>Sports</span><br>
+                            ✔ Long Jump Central Kerala Sahadoya<br>
+                            ✔ School Representative Clinched Third Price in Central Kerala Sahodaya 2022<br>
+                            ✔ Sports Football Tournament Central<br>
+                            ✔ Kerala Sahodaya<br>                  
+                            <span>National/International
+                            Olympiads</span><br>
+                            ✔Green Olympiad Olympiad Participant For Three Years Continuously<br>
+                            ✔National/International Olympiads<br>
+                            ✔Sastra Pratibha Participant Participated In Sastra Pratibha<br>
+                
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------------contact----------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> tejaspramod2005@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +91-7356956035</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/tej_26_/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/tejas-pramod-7856342b1/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/TejasPremod"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <button class="send-mail-btn btn3" onclick="window.location.href='mailto:tejaspramod2005@gmail.com?subject=Your Subject&body=Your Message'">
+                    Send Mail
+                </button>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="firstname"  placeholder="First Name" required>
+                    <input type="email" name="email"  placeholder="Your Email" required>
+                    <input type="text" name="lastname"  placeholder="Last Name" required>
+                    <input type="number" name="number"  placeholder="Your number" required>
+                    <div class="gender-container">
+                        <label><input type="checkbox" name="gender" value="male" onclick="selectOnlyOne(this)"> Male</label>
+                        <label><input type="checkbox" name="gender" value="female" onclick="selectOnlyOne(this)"> Female</label>
+                        <label><input type="checkbox" name="gender" value="other" id="other" onclick="selectOnlyOne(this)"> Other</label>
+                        <input type="text" id="customGender" name="custom_gender" class="custom-input" placeholder="Specify gender">
+                    </div>
+                    <div class="dropdown">
+                        <input type="text" name="district" id="searchBox" placeholder="Search District..." onkeyup="filterFunction()">
+                        <div class="dropdown-content" id="dropdownList">
+                        </div>
+                    </div>
+                
+                    <script>
+                        const districts = [
+                            "Thiruvananthapuram", "Kollam", "Pathanamthitta", "Alappuzha", "Kottayam", "Idukki", 
+                            "Ernakulam", "Thrissur", "Palakkad", "Malappuram", "Kozhikode", "Wayanad", "Kannur", "Kasaragod"
+                        ];
+                        
+                        const dropdownList = document.getElementById("dropdownList");
+                        const searchBox = document.getElementById("searchBox");
+                
+                        function populateDropdown() {
+                            dropdownList.innerHTML = "";
+                            districts.forEach(district => {
+                                let item = document.createElement("div");
+                                item.textContent = district;
+                                item.onclick = function() {
+                                    searchBox.value = district;
+                                    dropdownList.style.display = "none";
+                                };
+                                dropdownList.appendChild(item);
+                            });
+                        }
+                
+                        function filterFunction() {
+                            const filter = searchBox.value.toLowerCase();
+                            const items = dropdownList.getElementsByTagName("div");
+                            for (let i = 0; i < items.length; i++) {
+                                let txtValue = items[i].textContent || items[i].innerText;
+                                items[i].style.display = txtValue.toLowerCase().includes(filter) ? "block" : "none";
+                            }
+                            dropdownList.style.display = "block";
+                        }
+                
+                        searchBox.onclick = function() {
+                            populateDropdown();
+                            dropdownList.style.display = "block";
+                        };
+                
+                        document.addEventListener("click", function(event) {
+                            if (!document.querySelector(".dropdown").contains(event.target)) {
+                                dropdownList.style.display = "none";
+                            }
+                        });
+                    </script>
+                    <textarea name="address" rows="3" placeholder="Your Address"></textarea>
+                    <textarea name="qualifications" rows="3" placeholder="Educational Qualifications"></textarea>
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="Submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+        </div>
+    </div>
+</div>
+<script>
+    function selectOnlyOne(checkbox) {
+        let checkboxes = document.querySelectorAll('input[name="gender"]');
+        checkboxes.forEach(cb => {
+            if (cb !== checkbox) cb.checked = false;
+        });
+
+        let customInput = document.getElementById("customGender");
+        customInput.style.display = document.getElementById("other").checked ? "block" : "none";
+    }
+</script>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby19CeUTTldzsDb_q6P0XR6p_SL8TTaNoEyg8Vfl0UOnyJ1z_r7l_31Tw_iycfPn1lV4Q/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML= ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right= "0px";
+
+    }
+    function closemenu(){
+        sidemenu.style.right= "-130px";
+        
+    }
+</script>
+
+</html>
+
